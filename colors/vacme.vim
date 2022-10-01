@@ -20,6 +20,10 @@ let g:colors_name = "vacme"
 " This is where the colors are defined
 " 1 is the lightest value, 3 or 4 are the darkest values
 
+" Black
+    let s:BK  = '#000000'
+    let s:BKC = '0'
+
 " SHADES OF WHITE
     let s:W1  = '#FFFFEC'
     let s:W2  = '#EEEEA7'
@@ -146,11 +150,11 @@ hi!  MatchParen    term=NONE  cterm=NONE  ctermfg=NONE  ctermbg=NONE  gui=NONE  
 " {{{ Interface Colors
 " *********************************************************
 
-exe "hi! Normal"        ." guifg=".s:W4    ." ctermfg=".s:WC4    ." guibg=".s:W1    ." ctermbg=".s:WC1
-exe "hi! Visual"        ." guifg=".s:W4    ." ctermfg=".s:WC4    ." guibg=".s:W2    ." ctermbg=".s:WC2
+exe "hi! Normal"        ." guifg=".s:BK    ." ctermfg=".s:BKC    ." guibg=".s:W1    ." ctermbg=".s:WC1
+exe "hi! Visual"        ." guifg=".s:BK    ." ctermfg=".s:BKC    ." guibg=".s:W2    ." ctermbg=".s:WC2
 exe "hi! NonText"       ." guifg=".s:W3    ." ctermfg=".s:WC3
-exe "hi! StatusLine"    ." guifg=".s:W4    ." ctermfg=".s:WC4    ." guibg=".s:C1    ." ctermbg=".s:CC1    ." cterm=bold,underline"    ." gui=bold,underline"
-exe "hi! StatusLineNC"  ." guifg=".s:W4    ." ctermfg=".s:WC4    ." guibg=".s:C1    ." ctermbg=".s:CC1
+exe "hi! StatusLine"    ." guifg=".s:BK    ." ctermfg=".s:BKC    ." guibg=".s:C1    ." ctermbg=".s:CC1    ." cterm=bold,underline"    ." gui=bold,underline"
+exe "hi! StatusLineNC"  ." guifg=".s:BK    ." ctermfg=".s:BKC    ." guibg=".s:C1    ." ctermbg=".s:CC1
 exe "hi! LineNr"        ." guifg=".s:W3    ." ctermfg=".s:WC3    ." guibg=".s:Y1    ." ctermbg=".s:WC1
 exe "hi! CursorLineNr"  ." guifg=".s:W1    ." ctermfg=".s:WC1    ." guibg=".s:M3    ." ctermbg=".s:MC3
 exe "hi! VertSplit"     ." guifg=".s:W4    ." ctermfg=".s:WC4    ." guibg=".s:C1    ." ctermbg=".s:CC1
@@ -158,12 +162,12 @@ exe "hi! Folded"        ." guifg=".s:Y3    ." ctermfg=".s:YC3
 exe "hi! FoldColumn"    ." guifg=".s:Y2    ." ctermfg=".s:YC2    ." guibg=".s:Y1    ." ctermbg=".s:YC1
 exe "hi! TabLineSel"    ." guifg=".s:W1    ." ctermfg=".s:WC1    ." guibg=".s:M3    ." ctermbg=".s:MC3
 
-exe "hi! Search"        ." guifg=".s:W4    ." ctermfg=".s:WC4    ." guibg=".s:W2    ." ctermbg=".s:WC2
+exe "hi! Search"        ." guifg=".s:BK    ." ctermfg=".s:BKC    ." guibg=".s:W2    ." ctermbg=".s:WC2
 exe "hi! IncSearch"     ." guifg=".s:W1    ." ctermfg=".s:WC1    ." guibg=".s:M3    ." ctermbg=".s:MC3
 
 exe "hi! WildMenu"      ." guifg=".s:W1    ." ctermfg=".s:WC1    ." guibg=".s:M3    ." ctermbg=".s:MC3
 exe "hi! Pmenu"         ." guifg=".s:G3    ." ctermfg=".s:GC3    ." guibg=".s:G1    ." ctermbg=".s:GC1
-exe "hi! PmenuSel"      ." guifg=".s:W4    ." ctermfg=".s:WC4    ." guibg=".s:G2    ." ctermbg=".s:GC2
+exe "hi! PmenuSel"      ." guifg=".s:BK    ." ctermfg=".s:BKC    ." guibg=".s:G2    ." ctermbg=".s:GC2
 exe "hi! PmenuSbar"     ." guifg=".s:G1    ." ctermfg=".s:GC1    ." guibg=".s:G3    ." ctermbg=".s:GC3
 exe "hi! PmenuThumb"    ." guifg=".s:G1    ." ctermfg=".s:GC1    ." guibg=".s:W4    ." ctermbg=".s:WC4
 
