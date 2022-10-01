@@ -203,7 +203,7 @@ exe "hi! Directory"      ." cterm=bold"
 
 " I know I said this colorscheme doesn't do syntax highlighting, I lied.
 
-exe "hi! Comment"     ." guifg=".s:W4      ." cterm=bold"
+exe "hi! Comment"     ." guifg=".s:W3      ." cterm=bold"
 exe "hi! Underlined"  ." cterm=underline"  ." gui=underline"
 exe "hi! Title"       ." cterm=bold"
 
