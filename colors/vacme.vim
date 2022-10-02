@@ -1,3 +1,4 @@
+" vim:set foldmethod=marker
 hi clear
 syntax reset
 let g:colors_name = "vacme"
@@ -206,6 +207,7 @@ exe "hi! Directory"      ." cterm=bold"
 exe "hi! Comment"     ." guifg=".s:W3      ." cterm=bold"
 exe "hi! Underlined"  ." cterm=underline"  ." gui=underline"
 exe "hi! Title"       ." cterm=bold"
+exe "hi! MatchParen"     ." guibg=".s:Y3      ." ctermbg=".s:YC3
 
 exe "hi! SpellBad"    ." guifg=".s:R3      ." ctermfg=".s:RC3  ." cterm=underline"  ." gui=underline"
 exe "hi! SpellCap"    ." cterm=underline"  ." gui=underline"
